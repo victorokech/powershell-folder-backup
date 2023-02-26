@@ -1,0 +1,186 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PhpManager</S>
+      <Version N="Version">1.26.3</Version>
+      <S N="Type">Module</S>
+      <S N="Description">A PowerShell module to install/update PHP, PHP extensions and Composer</S>
+      <S N="Author">Michele Locati</S>
+      <S N="CompanyName">mlocati</S>
+      <S N="Copyright">(c) 2018-2023 Michele Locati. All rights reserved.</S>
+      <DT N="PublishedDate">2023-01-14T22:17:25+03:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2023-01-23T21:09:02.2034845+03:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/mlocati/powershell-phpmanager/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/mlocati/powershell-phpmanager</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/mlocati/powershell-phpmanager/master/images/php.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>php</S>
+          <S>extensions</S>
+          <S>composer</S>
+          <S>windows</S>
+          <S>win32</S>
+          <S>dll</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-PhpAvailableVersion</S>
+                <S>Install-Php</S>
+                <S>Update-Php</S>
+                <S>Uninstall-Php</S>
+                <S>Get-Php</S>
+                <S>Set-PhpIniKey</S>
+                <S>Get-PhpIniKey</S>
+                <S>Get-PhpExtension</S>
+                <S>Enable-PhpExtension</S>
+                <S>Disable-PhpExtension</S>
+                <S>Install-PhpExtension</S>
+                <S>Install-PhpExtensionPrerequisite</S>
+                <S>Update-PhpCAInfo</S>
+                <S>Set-PhpDownloadCache</S>
+                <S>Get-PhpDownloadCache</S>
+                <S>Initialize-PhpSwitcher</S>
+                <S>Add-PhpToSwitcher</S>
+                <S>Get-PhpSwitcher</S>
+                <S>Remove-PhpFromSwitcher</S>
+                <S>Switch-Php</S>
+                <S>Move-PhpSwitcher</S>
+                <S>Remove-PhpSwitcher</S>
+                <S>Install-Composer</S>
+                <S>Set-OpenSSLConf</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-PhpAvailableVersion</S>
+                <S>Install-Php</S>
+                <S>Update-Php</S>
+                <S>Uninstall-Php</S>
+                <S>Get-Php</S>
+                <S>Set-PhpIniKey</S>
+                <S>Get-PhpIniKey</S>
+                <S>Get-PhpExtension</S>
+                <S>Enable-PhpExtension</S>
+                <S>Disable-PhpExtension</S>
+                <S>Install-PhpExtension</S>
+                <S>Install-PhpExtensionPrerequisite</S>
+                <S>Update-PhpCAInfo</S>
+                <S>Set-PhpDownloadCache</S>
+                <S>Get-PhpDownloadCache</S>
+                <S>Initialize-PhpSwitcher</S>
+                <S>Add-PhpToSwitcher</S>
+                <S>Get-PhpSwitcher</S>
+                <S>Remove-PhpFromSwitcher</S>
+                <S>Switch-Php</S>
+                <S>Move-PhpSwitcher</S>
+                <S>Remove-PhpSwitcher</S>
+                <S>Install-Composer</S>
+                <S>Set-OpenSSLConf</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">- Fix #104 (#105)</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2018-2023 Michele Locati. All rights reserved.</S>
+          <S N="description">A PowerShell module to install/update PHP, PHP extensions and Composer</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">- Fix #104 (#105)</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">502</S>
+          <S N="downloadCount">151902</S>
+          <S N="packageSize">1021620</S>
+          <S N="published">14/01/2023 22:17:25 +03:00</S>
+          <S N="created">14/01/2023 22:17:25 +03:00</S>
+          <S N="lastUpdated">23/01/2023 18:02:02 +03:00</S>
+          <S N="tags">php extensions composer windows win32 dll PSModule PSFunction_Get-PhpAvailableVersion PSCommand_Get-PhpAvailableVersion PSFunction_Install-Php PSCommand_Install-Php PSFunction_Update-Php PSCommand_Update-Php PSFunction_Uninstall-Php PSCommand_Uninstall-Php PSFunction_Get-Php PSCommand_Get-Php PSFunction_Set-PhpIniKey PSCommand_Set-PhpIniKey PSFunction_Get-PhpIniKey PSCommand_Get-PhpIniKey PSFunction_Get-PhpExtension PSCommand_Get-PhpExtension PSFunction_Enable-PhpExtension PSCommand_Enable-PhpExtension PSFunction_Disable-PhpExtension PSCommand_Disable-PhpExtension PSFunction_Install-PhpExtension PSCommand_Install-PhpExtension PSFunction_Install-PhpExtensionPrerequisite PSCommand_Install-PhpExtensionPrerequisite PSFunction_Update-PhpCAInfo PSCommand_Update-PhpCAInfo PSFunction_Set-PhpDownloadCache PSCommand_Set-PhpDownloadCache PSFunction_Get-PhpDownloadCache PSCommand_Get-PhpDownloadCache PSFunction_Initialize-PhpSwitcher PSCommand_Initialize-PhpSwitcher PSFunction_Add-PhpToSwitcher PSCommand_Add-PhpToSwitcher PSFunction_Get-PhpSwitcher PSCommand_Get-PhpSwitcher PSFunction_Remove-PhpFromSwitcher PSCommand_Remove-PhpFromSwitcher PSFunction_Switch-Php PSCommand_Switch-Php PSFunction_Move-PhpSwitcher PSCommand_Move-PhpSwitcher PSFunction_Remove-PhpSwitcher PSCommand_Remove-PhpSwitcher PSFunction_Install-Composer PSCommand_Install-Composer PSFunction_Set-OpenSSLConf PSCommand_Set-OpenSSLConf PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2023-01-23T18:02:02Z</S>
+          <S N="NormalizedVersion">1.26.3</S>
+          <S N="Authors">Michele Locati</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PhpManager.nuspec|private\Set-PhpIniLine.ps1|private\Set-PhpManagerConfigurationKey.ps1|PhpManager.psd1|private\Test-IsFileWritable.ps1|PhpManager.psm1|private\Variables.ps1|private\Constants.ps1|private\bin\7za-License.txt|private\Edit-FolderInPath.ps1|private\bin\7za-x64.exe|private\Expand-ArchiveWith7Zip.ps1|private\bin\7za-x86.exe|private\Get-CACertFromCurl.ps1|private\bin\Inspect-PhpExtension-x64.exe|private\Get-CACertFromSystem.ps1|private\bin\Inspect-PhpExtension-x86.exe|private\Get-FileFromUrlOrCache.ps1|public\Add-PhpToSwitcher.ps1|private\Get-PeclArchiveUrl.ps1|public\Disable-PhpExtension.ps1|private\Get-PeclAvailablePackage.ps1|public\Enable-PhpExtension.ps1|private\Get-PeclPackageVersion.ps1|public\Get-Php.ps1|private\Get-PhpActivatedExtension.ps1|public\Get-PhpAvailableVersion.ps1|private\Get-PhpBuiltinExtension.ps1|public\Get-PhpDownloadCache.ps1|private\Get-PhpExtensionDetail.ps1|public\Get-PhpExtension.ps1|private\Get-PhpExtensionHandle.ps1|public\Get-PhpIniKey.ps1|private\Get-PhpIniLine.ps1|public\Get-PhpSwitcher.ps1|private\Get-PhpManagerConfigurationKey.ps1|public\Initialize-PhpSwitcher.ps1|private\Get-PhpVersionFromApiVersion.ps1|public\Install-Composer.ps1|private\Get-PhpVersionFromUrl.ps1|public\Install-Php.ps1|private\Get-PhpVersionsCompatibility.ps1|public\Install-PhpExtension.ps1|private\Get-TemporaryFileWithExtension.ps1|public\Install-PhpExtensionPrerequisite.ps1|private\Get-XdebugExtension.ps1|public\Move-PhpSwitcher.ps1|private\Install-PhpFromUrl.ps1|public\Remove-PhpFromSwitcher.ps1|private\Invoke-BroadcastEnvChanged.ps1|public\Remove-PhpSwitcher.ps1|private\New-PhpSwitcher.ps1|public\Set-OpenSSLConf.ps1|private\New-TempDirectory.ps1|public\Set-PhpDownloadCache.ps1|private\PhpExtension.ps1|public\Set-PhpIniKey.ps1|private\PhpSwitcher.ps1|public\Switch-Php.ps1|private\PhpVersion.ps1|public\Uninstall-Php.ps1|private\Reset-Acl.ps1|public\Update-Php.ps1|private\Set-EnvVar.ps1|public\Update-PhpCAInfo.ps1|private\Set-NetSecurityProtocolType.ps1</S>
+          <S N="GUID">f444cf15-ed25-40c2-96bb-ebfd51d08564</S>
+          <S N="PowerShellVersion">5.0</S>
+          <S N="CompanyName">Unknown</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\Victor\Documents\PowerShell\Modules\PhpManager\1.26.3</S>
+    </MS>
+  </Obj>
+</Objs>
